@@ -1,0 +1,316 @@
+nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+nav {
+  background-color: white;
+}
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .brand-name {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: rgb(15, 15, 203);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(120%);
+  }
+  
+  li a:hover::after {
+    width: 30%;
+    left: 0;
+  }
+  
+  li a:hover {
+    background-color: transparent;
+  }
+
+.text-utama {
+    color: gray;
+    opacity: 0.7;
+    width: 631px;
+    height: 41px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 888%;
+    letter-spacing: 0.015em;
+    padding-left: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .black-text{
+    width: 723px;
+    height: 264px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 155%;
+    text-transform: capitalize;
+    color: black;
+    padding-top: 25px;
+    padding-left: 50px;
+    flex:none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .highlight-text {
+    color: navy ;
+  }
+  
+  .container {
+    display: block;
+    align-items:center;
+  }
+  
+  .image {
+    width: 389px;
+    float: right;
+    height: 407px;
+    margin-right: 50px;
+    margin-top: 40px;
+    left: -9px;
+    position: relative;
+    top: -320px;
+    border-radius: 15.4167px;
+    z-index: -1;
+  }
+  
+  header {
+    margin-top: 13%;
+  }
+
+  .card-container{
+    width: auto;
+    height: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 19px 16px;
+    gap: 10px;
+    width: 180px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0.974474px 7.7958px 58.4685px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    float: right;
+    margin-left: auto;
+    margin-right: -140px;
+    margin-top: -240px;
+    flex-grow: 0;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 19px 16px;
+  gap: 10px;
+  width: 180px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0.974474px 7.7958px 58.4685px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  flex: none;
+  order: 0;
+  float: right;
+  margin-left: auto;
+  margin-right: -140px;
+  margin-top: -140px;
+  flex-grow: 0;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 19px 16px;
+  gap: 10px;
+  width: 180px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0.974474px 7.7958px 58.4685px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  flex: none;
+  order: 0;
+  float: right;
+  margin-left: auto;
+  margin-right: -140px;
+  margin-top: -40px;
+  flex-grow: 0;
+}
+
+.card-logo {
+  width: 40px; 
+  height: 40px;
+}
+
+.card-description {
+    flex: 1;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.card-text {
+    margin: 0;
+    font-size: 16px;
+    color: #555555;
+}
+
+.card-ball {
+  width: 65px;
+  height: 65px;
+  background: #FFFFFF;
+  border-radius: 50%; /* Mengatur border-radius ke 50% untuk membuat bentuk bulat */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-top: -310px;
+  margin-right: -420px;
+}
+
+.card-logos {
+  width: 60px; /* Sesuaikan dengan ukuran logo yang diinginkan */
+  height: 60px; /* Sesuaikan dengan ukuran logo yang diinginkan */
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 32px;
+  gap: 10px;
+  width: 301px;
+  height: 68px;
+  background: #1F3984;
+  border-radius: 10px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 54px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position:relative;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  
+}
+
+.button:hover {
+  background: #c9c9c9;
+}
+
+.button-label {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;;
+}
+
+.button-label:hover::after {
+  width: 30%;
+  left: 0;
+}
+
+.button-label:hover {
+  background-color: transparent;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  background-color: lightgray;
+  height: 20px;
+  width: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-text {
+  margin-top: 10px;
+}
+
+.progress-bar-fill {
+  background-color: #1F3984;
+  height: 100%;
+}
+
